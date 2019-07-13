@@ -6,6 +6,7 @@ Working with non-model organism means you don't have known SNPs and prepared int
 - Split genome into scaffolds as intervals.
 
 How to run:
+
 0. `conda env create -f environment.yaml` and install [bamcov](https://github.com/fbreitwieser/bamcov) ...
 1. prepare metadata.tsv.
 2. modify config.yaml if needed.
