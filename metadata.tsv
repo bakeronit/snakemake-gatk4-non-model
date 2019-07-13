@@ -1,2 +1,3 @@
 sample	prefix	sample_barcode	flowcell_barcode	lane	fq1	fq2
-SRR1770413	SRR1770413	S1	SRR1770413	L001	data/fastq/SRR1770413_1.fastq.gz	data/fastq/SRR1770413_2.fastq.gz
+SRR17704131	SRR17704131	S1	SRR17704131	L001	data/fastq/SRR17704131_1.fastq.gz	data/fastq/SRR17704131_2.fastq.gz
+SRR17704132	SRR17704132	S2	SRR17704132	L001	data/fastq/SRR17704132_1.fastq.gz	data/fastq/SRR17704132_2.fastq.gz
