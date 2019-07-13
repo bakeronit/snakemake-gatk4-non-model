@@ -1,0 +1,10 @@
+GENOME:
+    "data/genome/E.coli_K12_MG1655.fa"
+
+trim : True
+tmpdir: "/scratch/jc502059/mapping"
+suffix : ["_1","_2"]
+
+fastqc_threads: 10
+trim_threads: 10
+bwa_threads: 16

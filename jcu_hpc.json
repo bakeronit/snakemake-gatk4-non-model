@@ -1,0 +1,85 @@
+{
+    "__default__":
+    {
+        "time"  : "10:00:00",
+        "ncpus" : "1",
+        "mem"   : "2gb"
+    },
+
+    "trim_pe":
+    {
+        "time"  : "100:00:00",
+        "mem"   : "10gb"
+    },
+
+    "fastqc":
+    {
+        "ncpus" : "10"
+    },
+
+    "bamstats":
+    {
+        "mem"   : "10gb"
+    },
+
+    "SamToFastqAndBwaMem":
+    {
+        "time"  : "100:00:00",
+        "mem"   : "10gb",
+        "ncpus" : "16"
+    },
+
+    "MergeBamAlignment":
+    {
+        "mem"   : "20gb"
+    },
+
+    "MarkDuplicates":
+    {
+        "mem"   : "30gb"
+    },
+
+    "SortAndFixTags":
+    {
+        "mem"   : "10gb"
+    },
+
+    "HaplotypeCaller":
+    {
+        "ncpus" : "8",
+        "time"  : "200:00:00",
+        "mem"   : "20gb"
+    },
+    
+    "GenotypeGVCFs":
+    {
+        "mem"   : "10gb"
+    },
+
+    "GatherVcfs":
+    {
+        "mem"   : "30gb"
+    },
+
+    "selectSNPs":
+    {
+        "mem"   : "20gb"
+    },
+    
+    "selectINDELs":
+    {
+        "mem"   : "20gb"
+    },
+
+    "hardfilterSNPs":
+    {
+        "mem"   : "20gb"
+    },
+
+    "hardfilterINDELs":
+    {
+        "mem"   : "10gb"
+    }
+}
+
+
