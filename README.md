@@ -5,6 +5,8 @@ Working with non-model organism means you don't have known SNPs and prepared int
 - Apply hard filters to call sets.
 - Split genome into scaffolds as intervals.
 
+<img src="https://github.com/bakeronit/snakemake-gatk4-non-model/blob/master/gatk-snakemake.png" alt="workflow" width="420" height="494">
+
 **How to run:**
 
 0. `conda env create -f environment.yaml` and install [bamcov](https://github.com/fbreitwieser/bamcov) ...
