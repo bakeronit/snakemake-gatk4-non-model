@@ -17,7 +17,7 @@ rule SamToFastqAndBwaMem:
     threads: config["bwa_threads"]
     shell:
         """
-        java -Dsamjdk.compression_level=5 -Xms3000m -jar $PICARD_HOME/picard.jar SamToFastq \
+        picard SamToFastq \
         INPUT={input.ubam} \
         FASTQ=/dev/stdout \
         INTERLEAVE=true \
