@@ -31,7 +31,7 @@ rule GenomicsDBImport:
         tar = "analysis/genomicsDB/{scaffold}.db.tar"
     shell:
         """
-        gatk --java-options "-Xmx4g -Xms4g -Djava.io.tmpdir=/scratch/jc502059/tmp" \
+        gatk --java-options "-Xmx4g -Xms4g" \
         GenomicsDBImport \
         --genomicsdb-workspace-path {output.db} \
         --L {wildcards.scaffold} \
@@ -49,7 +49,7 @@ rule GenotypeGVCFs:
         "analysis/vcf/{scaffold}.vcf.gz"
     shell:
         """
-        gatk --java-options "-Xmx8g -Xms8g -Djava.io.tmpdir=/scratch/jc502059/tmp" \
+        gatk --java-options "-Xmx8g -Xms8g" \
         GenotypeGVCFs \
         -R {REFERENCE} \
         -O {output} \

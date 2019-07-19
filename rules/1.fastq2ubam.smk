@@ -35,6 +35,7 @@ rule fastq2ubam:
         lane=lambda wildcards : get_read_group(wildcards)['lane'],
         sample_barcode = lambda wildcards : get_read_group(wildcards)['sample_barcode'],
         sampleid = lambda wildcards : get_read_group(wildcards)['sampleid']
+	platform = config['platform']
     shell:
        """ 
         picard FastqToSam \
@@ -46,5 +47,5 @@ rule fastq2ubam:
          PLATFORM_UNIT={params.flowcell_barcode}.{params.lane}.{params.sample_barcode} \
          LIBRARY_NAME={params.sampleid}_{params.sample_barcode} \
          SAMPLE_NAME={params.sampleid} \
-         PLATFORM_MODEL=NovaSeq6000_S4
+         PLATFORM_MODEL={params.platform}
         """
